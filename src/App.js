@@ -1,13 +1,14 @@
 import React from 'react';
 import { View } from 'react-native';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import reducers from './reducers';
 
 const App = () => {
 	return (
-		<View>
-			<Text>
-				Tech Stack App!
-			</Text>
-		</View>
+		<Provider store={createStore(reducers)}>
+			<View />
+		</Provider>
 	);
 };
 
