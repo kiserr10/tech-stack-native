@@ -3,7 +3,11 @@ import { View } from 'react-native';
 
 const App = () => {
 	return (
-		<View />
+		<View>
+			<Text>
+				Tech Stack App!
+			</Text>
+		</View>
 	);
 };
 
